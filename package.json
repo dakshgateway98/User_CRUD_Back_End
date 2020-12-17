@@ -1,0 +1,40 @@
+{
+  "name": "Mongo-Node-Assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "exec": "npx babel-node src/app.js",
+    "watch": "npx babel-watch src/app.js",
+    "start": "npx babel-watch src/server.js",
+    "server-watch": "npx babel-watch src/server.js",
+    "build": "npx babel src -d build",
+    "test": "npx jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.16",
+    "winston": "^3.2.1",
+    "@babel/node": "^7.12.10",
+    "babel-preset-minify": "^0.5.1",
+    "babel-watch": "^7.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
+  }
+}
