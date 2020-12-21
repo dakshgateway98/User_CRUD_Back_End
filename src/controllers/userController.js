@@ -1,8 +1,8 @@
-import jwt from "jsonwebtoken";
 import User from "../models/userModel";
 
 export const getAllUser = async () => {
   try {
+    console.log("getAllUser");
     return await User.find();
   } catch (err) {
     throw new Error(`getAllHacker Err: ${err}`);
@@ -11,7 +11,7 @@ export const getAllUser = async () => {
 
 export const createOneUser = async (data) => {
   try {
-    console.log("Controller", data);
+    // console.log("Controller", data);
     await User.create(data);
   } catch (err) {
     throw new Error(`createOneHacker Err: ${err}`);
@@ -32,7 +32,7 @@ export const deleteById = async (id) => {
     // console.log("Controller", id);
 
     return await User.findByIdAndDelete(id, () => {
-      console.log("DELETE");
+      console.log(`deleteById success : ${id}`);
     });
   } catch (err) {
     throw new Error(`deleteById Err: ${err}`);

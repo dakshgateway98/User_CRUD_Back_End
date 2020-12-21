@@ -35,8 +35,8 @@ router.post("/getById", async (req, res) => {
   }
 });
 
-// localhost:4444/posts POST request
-// Create one quote
+// localhost:4444/user POST request
+// Create one user
 router.post("/", async (req, res) => {
   try {
     console.log("Create User")
